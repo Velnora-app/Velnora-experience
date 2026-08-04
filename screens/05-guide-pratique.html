@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>html{background:#0d0c0b}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velnora — Villa Aurea — Guide de la Villa</title>
+<link rel="stylesheet" href="../css/velnora-shared.css">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="icon" href="../assets/favicon-32.png">
+<meta name="theme-color" content="#0d0c0b">
+<style>
+  .device{background:radial-gradient(120% 70% at 50% -10%, #211c17 0%, var(--ink) 55%);}
+</style>
+</head>
+<body>
+
+<div class="device">
+  <div class="scroll-area" id="scroll">
+    <div class="back-affordance" id="back" onclick="location.href='01-accueil.html'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5 L8 12 L15 19"/></svg>Accueil</div>
+
+    <div class="page-head">
+      <div class="page-col">
+        <div class="screen-eyebrow enter">Velnora · Villa Aurea</div>
+        <h1 class="screen-title enter enter-1">Guide de la Villa</h1>
+
+        <div style="margin-top:14px;" class="enter enter-2">
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Tydom &amp; éclairages</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">La tablette murale de l'entrée pilote une partie des éclairages — jardin, piscine, porche, rampe du garage — ainsi que quelques points lumineux de la cuisine. Le reste de la villa s'allume simplement à l'interrupteur, pièce par pièce.</div></div>
+          </div>
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Piscine chauffée</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">La piscine (10 × 4 m) est chauffée à 28°C de mai à septembre, parfois dès fin avril si la météo le permet. La pompe à chaleur suit la température extérieure : par une journée plus fraîche, l'eau reste en dessous de cet objectif — c'est normal, pas un défaut. Le local technique, au niveau -1, est entretenu par notre équipe pendant votre séjour.</div></div>
+          </div>
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Sauna privé</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">Le sauna se trouve au niveau -1, à côté de l'espace sport. Comptez quinze à vingt minutes par séance, en vous hydratant bien avant et après. Par précaution, évitez de l'utiliser seul en cas de doute sur votre condition physique.</div></div>
+          </div>
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Barbecue Bastard</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">Notre barbecue Bastard, sur la terrasse, fonctionne au charbon — un sac plein et des brochettes vous attendent à côté. Laissez la braise monter en température une bonne vingtaine de minutes avant de cuisiner, et laissez-le refroidir complètement avant de le refermer.</div></div>
+          </div>
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Cuisine &amp; lave-vaisselle</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">La cuisine est entièrement équipée, de la cafetière expresso au grille-pain. Le lave-vaisselle se trouve sous le plan de travail central ; le cycle Éco suffit largement pour un usage quotidien et reste le plus silencieux en soirée.</div></div>
+          </div>
+          <div class="acc-item" onclick="toggleAccordion(this)">
+            <div class="acc-head"><span class="acc-title">Stationnement &amp; recharge électrique</span><svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--stone-dim);"><path d="M6 9l6 6 6-6"/></svg></div>
+            <div class="acc-body"><div class="acc-body-in">Le stationnement est gratuit et privé, sur l'allée devant la villa. Une borne de recharge (prise Type 2) est installée près du garage, libre d'utilisation pendant tout votre séjour.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/velnora-shared.js"></script>
+<script>
+  initBackAffordance();
+</script>
+
+</body>
+</html>

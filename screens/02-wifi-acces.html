@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>html{background:#0d0c0b}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velnora — Villa Aurea — Wi-Fi &amp; Accès privé</title>
+<link rel="stylesheet" href="../css/velnora-shared.css">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="icon" href="../assets/favicon-32.png">
+<meta name="theme-color" content="#0d0c0b">
+<style>
+  .device{background:
+    radial-gradient(120% 70% at 50% -10%, #211c17 0%, var(--ink) 55%);
+  }
+  .section-label{font-family:var(--font-display);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-dim);margin:34px 0 10px;}
+  .section-label:first-of-type{margin-top:6px;}
+  .access-note{font-family:var(--font-body);font-size:13px;font-weight:300;color:var(--stone-dim);padding:0 2px;margin-top:10px;line-height:1.6;}
+  .access-note b{color:var(--brass-light);font-weight:400;}
+  .proc-text{font-family:var(--font-body);font-size:15px;font-weight:300;line-height:1.65;color:var(--paper-2);padding:18px 18px 4px;}
+</style>
+</head>
+<body>
+
+<div class="device">
+  <div class="scroll-area" id="scroll">
+    <div class="back-affordance" id="back" onclick="location.href='01-accueil.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5 L8 12 L15 19"/></svg>
+      Accueil
+    </div>
+
+    <div class="page-head">
+      <div class="page-col">
+        <div class="screen-eyebrow enter">Velnora · Villa Aurea</div>
+        <h1 class="screen-title enter enter-1">Wi-Fi &amp; Accès privé</h1>
+
+        <div class="section-label enter enter-2">Votre accès privé</div>
+        <div class="glass-card enter enter-2">
+          <div class="proc-text">Camille ou un membre de la conciergerie Conciergerie Aurea vous accueille en personne et vous remet les clés à votre arrivée. Pour vos allées et venues pendant le séjour, le portail piéton s'ouvre avec le digicode ci-dessous — refermez-le derrière vous, il se verrouille automatiquement.</div>
+          <div class="copy-row" onclick="copyValue(this)">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+            <div class="txt"><div class="eb">Code du portail piéton</div><div class="val">2609</div></div>
+            <div class="copy-pill">Copier</div>
+          </div>
+        </div>
+        <div class="access-note enter enter-3">Accueil personnalisé dès <b>16h00</b> — Camille vous contacte la veille pour ajuster l'heure si besoin.</div>
+
+        <div class="section-label enter enter-3">Réseau</div>
+        <div class="glass-card enter enter-3">
+          <div class="copy-row" onclick="copyValue(this)">
+            <div class="ic"><svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M30 42 a4 4 0 1 1 0.1 0 M18 32 a17 17 0 0 1 24 0 M10 24 a29 29 0 0 1 40 0"/></svg></div>
+            <div class="txt"><div class="eb">Nom du réseau</div><div class="val">Villa-Aurea</div></div>
+            <div class="copy-pill">Copier</div>
+          </div>
+          <div style="border-top:1px solid var(--hair);"></div>
+          <div class="copy-row" onclick="copyValue(this)">
+            <div class="ic" style="opacity:0;"><svg viewBox="0 0 24 24"></svg></div>
+            <div class="txt"><div class="eb">Mot de passe</div><div class="val">Aurea2026</div></div>
+            <div class="copy-pill">Copier</div>
+          </div>
+        </div>
+        <div class="glass-card enter enter-3" style="margin-top:10px;">
+          <div class="share-row" onclick="shareWifi(this, 'Villa-Aurea', 'Aurea2026')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.6l6.8-3.9M8.6 13.4l6.8 3.9"/></svg>
+            Partager le Wi-Fi
+          </div>
+        </div>
+        <div class="access-note enter enter-3">Fibre haut débit dans toute la villa, y compris en terrasse et au bord de la piscine.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/velnora-shared.js"></script>
+<script>
+  // Pas de recul au défilement ici : écran court, back-affordance reste fixe en permanence
+  // (comportement réservé aux écrans à défilement long : Check-in/Check-out, Contacts utiles,
+  // Guide pratique, La propriété, Recommandations locales — cf. js/velnora-shared.js).
+</script>
+
+</body>
+</html>
